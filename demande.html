@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="website icon" type="png" href="logos/logo.png">
+    <link rel="stylesheet"  href="style.css">
+    <script src="sweetalert.min.js"></script>
+    <title>GEOMTEC</title>
+</head>
+<body>
+    <script>
+        function navigateToPage() {
+          window.location.href = "index.html";
+        }
+      </script>
+    <div class="navbar" id="myNavbar">
+      <div id="imageContainer">
+        <img id="myImage" src="logos/logo.png" onclick="navigateToPage()" alt="Click me to navigate">
+      </div>
+      
+      <a href="Apropos.html">📂A propos</a>
+      <a href="services.html">🛠️Nos services</a>
+      <a href="demande.html">📈Demande de devis</a>
+      <a href="galerie.html">📷Galerie</a>
+      <a href="contactez-nous.html"> 📩Contactez-nous</a>
+      <a style="text-decoration: none;" href="http://www.gotrack.ma/" target="_blank"> 🌐Espace Client</a>
+      <a href="tel:+212522303100">📞 Appelez-nous : +212 522 303 100</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+      </a>
+    </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
+    <h1 style="text-decoration: underline; text-align: center;">Demande de devis</h1>
+    <div class="container3">
+        
+        <form  method="POST"  onsubmit="return submitForm(this);" >
+            <div class="form-group">
+                <div style="display: flex; width: 100%;">
+                    <div style="flex-basis: 50%; padding-right: 10px;">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div style="flex-basis: 50%; padding-left: 10px;">
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div style="display: flex; width: 100%;">
+                    <div style="flex-basis: 50%; padding-right: 10px;">
+                        <label for="societe">Société:</label>
+                        <input type="text" id="societe" name="societe">
+                    </div>
+                    <div style="flex-basis: 50%; padding-left: 10px;">
+                        <label for="domaine">Domaine d'activité:</label>
+                        <input type="text" id="domaine" name="domaine">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div style="display: flex; width: 100%;">
+                    <div style="flex-basis: 50%; padding-right: 10px;">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div style="flex-basis: 50%; padding-left: 10px;">
+                        <label for="telephone">Téléphone:</label>
+                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div style="display: flex; width: 100%;">
+                    <div style="flex-basis: 50%; padding-right: 10px;">
+                        <label for="fax">Fax:</label>
+                        <input type="text" id="fax" name="fax">
+                    </div>
+                    <div style="flex-basis: 50%; padding-left: 10px;">
+                        <label for="adresse">Adresse:</label>
+                        <input type="text" id="adresse" name="adresse">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="comment">Commentaire:</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" onchange="submitForm()">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <script>
+    function submitForm(form) {
+        swal({
+            title: "demande envoyer !",
+            text: " nous vous répondrons en moins de 24 heures.",
+            icon: "success",
+        })
+       
+        return false;
+    }
+    </script>
+   
+
+      
+   <footer id="footer">
+
+    
+    <p class="r"> Restez connecté avec vos véhicules !</p>
+    <p><img src="logos/localisation.png" style="height: 25px; width: 25px; margin-left: 8px;" alt="">
+        <a href="https://www.google.com/maps/place/GEOMTEC/@33.5894825,-7.607346,19.35z/data=!4m6!3m5!1s0xda7cd6a21bc63f1:0x4af8984a860b981e!8m2!3d33.5893199!4d-7.6065747!16s%2Fg%2F1tl8m1fl?entry=ttu"
+           target="_blank" style="font-size: 20px;" class="l">8, Khouribgua, 5ème étage N° 25, Casablanca 20250, Maroc <i
+                style="font-size: 20px; color: rgb(67, 182, 211);text-decoration: underline;">(Cliquez pour afficher en Google Maps)</i></a></p>
+                
+    <a class="a" style="color: #000000;" href="https://web.facebook.com/GEOMTEC/?locale=fr_FR&_rdc=1&_rdr" target="_blank"
+       rel="noopener noreferrer">
+        <i  class="fab fa-facebook-square" style=" margin-left: 8px;margin-top: -8px;"> <span style=" margin-left: 8px;" >Geomtec</span>
+        </i> <span  style=" color: rgb(67, 182, 211);text-decoration: underline;">  (Cliquez pour afficher en Facebook!)</span></a>
+    <p > <img src="logos/gmail.png" style="height: 20px; width: 20px; margin-left: 8px;" alt="">
+        <a class="a" href="mailto:contact@geomtec.com" target="_blank"
+           style="font-size: 20px; color:#000000; margin-left: 9px; ">contact@geomtec.com <i style=" color: rgb(67, 182, 211);text-decoration: underline;"> (Cliquez pour envoyer un
+                Mail!)</i></a></p> 
+    <p style="margin-top: 10px;"> <img src="logos/linkedin.png" style="height: 20px; width: 20px; margin-left: 8px;" alt="">
+        <a class="a" href="https://www.linkedin.com/company/geomtec/" target="_blank"
+                       style="font-size: 20px; color:#000000; margin-left: 9px; ">GEOMTEC<i style=" color: rgb(67, 182, 211);text-decoration: underline;"> (Cliquez pour afficher en linkedin!)</i></a></p>
+    <p style="text-align: center;">Contactez-nous, nous vous répondrons en moins de 24 heures :</p>
+    <p style="text-align: center; "> 📞Tel : 0522303100 / 📠 Fax : 0522301664</p>
+    <div class="footer-bottom">
+        <p class="ty">ALL RIGHTS RESERVED. ©2024 Geomtec</p><br>
+    </div>
+</footer>
+
+    
+ 
+    
+</body>
+</html>
